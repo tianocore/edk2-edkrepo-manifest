@@ -1,0 +1,38 @@
+<Manifest>
+  <ProjectInfo>
+    <CodeName>EdkRepo</CodeName>
+    <Description>EdkRepo - The Multi-Repository Tool for EDK II</Description>
+    <DevLead>ashley.e.desimone@intel.com</DevLead>
+    <LeadReviewers>
+      <Reviewer>ashley.e.desimone@intel.com</Reviewer>
+      <Reviewer>nathaniel.l.desimone@intel.com</Reviewer>
+      <Reviewer>puja.pandya@intel.com</Reviewer>
+    </LeadReviewers>
+  </ProjectInfo>
+
+  <GeneralConfig>
+    <PinPath>edk2/EdkRepo/pins</PinPath>
+    <DefaultCombo combination="master" />
+    <CurrentClonedCombo combination="master" />
+  </GeneralConfig>
+
+  <RemoteList>
+    <Remote name="Edk2StagingRepo">https://github.com/tianocore/edk2-staging.git</Remote>
+  </RemoteList>
+
+  <ClientGitHookList>
+  </ClientGitHookList>
+
+  <CommitTemplates>
+    <Template remoteName="CrToolsRepo">Templates/edkrepo-review-template.txt</Template>
+  </CommitTemplates>
+
+  <CombinationList>
+    <Combination name="master" description="the master branch from all repos">
+      <Source localRoot="edk2-staging" remote="Edk2StagingRepo" branch="EdkRepo" />
+    </Combination>
+  </CombinationList>
+
+  <DscList>
+  </DscList>
+</Manifest>

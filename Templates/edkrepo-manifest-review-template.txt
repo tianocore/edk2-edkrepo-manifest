@@ -1,0 +1,7 @@
+[staging/EdkRepo-Manifest]: Short one line description of change
+
+Several lines of description for the change.
+
+Cc: Ashley E DeSimone <ashley.e.desimone@intel.com>
+Cc: Nate DeSimone <nathaniel.l.desimone@intel.com>
+Cc: Puja Pandya <puja.pandya@intel.com>

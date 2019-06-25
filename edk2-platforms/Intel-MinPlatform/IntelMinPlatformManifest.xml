@@ -1,0 +1,86 @@
+<Manifest>
+  <ProjectInfo>
+    <CodeName>Intel-MinPlatform</CodeName>
+    <Description>Intel Minimum Platform</Description>
+    <DevLead>michael.a.kubacki@intel.com</DevLead>
+    <LeadReviewers>
+      <Reviewer>michael.a.kubacki@intel.com</Reviewer>
+      <Reviewer>chasel.chiu@intel.com</Reviewer>
+      <Reviewer>nathaniel.l.desimone@intel.com</Reviewer>
+      <Reviewer>ankit.sinha@intel.com</Reviewer>
+      <Reviewer>liming.gao@intel.com</Reviewer>
+      <Reviewer>ray.ni@intel.com</Reviewer>
+      <Reviewer>rangasai.v.chaganty@intel.com</Reviewer>
+      <Reviewer>isaac.w.oram@intel.com</Reviewer>
+      <Reviewer>daocheng.bu@intel.com</Reviewer>
+      <Reviewer>shifei.a.lu@intel.com</Reviewer>
+      <Reviewer>bowen.zhou@intel.com</Reviewer>
+    </LeadReviewers>
+  </ProjectInfo>
+
+  <GeneralConfig>
+    <PinPath>edk2-platforms/Intel-MinPlatform/pins</PinPath>
+    <DefaultCombo combination="master" />
+    <CurrentClonedCombo combination="master" />
+  </GeneralConfig>
+
+  <SparseCheckout>
+    <SparseSettings useDsc="false" sparseByDefault="true" />
+    <SparseData>
+      <!-- Always include all files in the repository root. -->
+      <AlwaysInclude>*.*</AlwaysInclude>
+    </SparseData>
+    <SparseData remote="Edk2Repo">
+      <AlwaysInclude>BaseTools|Conf</AlwaysInclude>
+      <AlwaysInclude>FatPkg|IntelFsp2Pkg|IntelFsp2WrapperPkg</AlwaysInclude>
+      <AlwaysInclude>MdeModulePkg|MdePkg|NetworkPkg|PcAtChipsetPkg|SecurityPkg</AlwaysInclude>
+      <AlwaysInclude>ShellPkg|SourceLevelDebugPkg|UefiCpuPkg|FmpDevicePkg|CryptoPkg</AlwaysInclude>
+    </SparseData>
+    <SparseData remote="Edk2PlatformsRepo">
+      <AlwaysInclude>Platform/Intel/AdvancedFeaturePkg|Platform/Intel/MinPlatformPkg|Platform/Intel/BoardModulePkg</AlwaysInclude>
+      <AlwaysInclude>Platform/Intel/DebugFeaturePkg|Platform/Intel/UserInterfaceFeaturePkg|Platform/Intel/ClevoOpenBoardPkg</AlwaysInclude>
+      <AlwaysInclude>Platform/Intel/KabylakeOpenBoardPkg|Platform/Intel/PurleyOpenBoardPkg|Platform/Intel/Readme.md</AlwaysInclude>
+      <AlwaysInclude>Platform/Intel/build.cfg|Platform/Intel/build_bios.py</AlwaysInclude>
+      <AlwaysInclude>Silicon/Intel/IntelSiliconPkg|Silicon/Intel/KabylakeSiliconPkg|Silicon/Intel/LewisburgPkg</AlwaysInclude>
+      <AlwaysInclude>Silicon/Intel/PurleyRcPkg|Silicon/Intel/PurleySktPkg</AlwaysInclude>
+    </SparseData>
+    <SparseData remote="Edk2NonOsiRepo">
+      <AlwaysInclude>Silicon/Intel/KabylakeSiliconBinPkg|Silicon/Intel/PurleySiliconBinPkg</AlwaysInclude>
+    </SparseData>
+    <SparseData remote="FspRepo">
+      <AlwaysInclude>AmberLakeFspBinPkg|CoffeeLakeFspBinPkg|KabylakeFspBinPkg</AlwaysInclude>
+    </SparseData>
+  </SparseCheckout>
+
+  <RemoteList>
+    <!-- The 'name' attribute for each Remote tag must be unique. -->
+    <Remote name="Edk2Repo">https://github.com/tianocore/edk2.git</Remote>
+    <Remote name="Edk2PlatformsRepo">https://github.com/tianocore/edk2-platforms.git</Remote>
+    <Remote name="Edk2NonOsiRepo">https://github.com/tianocore/edk2-non-osi.git</Remote>
+    <Remote name="FspRepo">https://github.com/IntelFsp/FSP.git</Remote>
+  </RemoteList>
+
+  <ClientGitHookList>
+  </ClientGitHookList>
+
+  <CommitTemplates>
+  </CommitTemplates>
+
+  <SubmoduleAlternateRemotes>
+  </SubmoduleAlternateRemotes>
+
+  <CombinationList>
+    <Combination name="master" description="the master branch from edk2 Repo, master branch from edk2-platforms repo, devel-MinPlatform branch from edk2-non-osi repo, master branch from FSP repo">
+      <Source localRoot="edk2" remote="Edk2Repo" branch="master" sparseCheckout="true" enableSubmodule="true" />
+      <Source localRoot="edk2-platforms" remote="Edk2PlatformsRepo" branch="master" sparseCheckout="true" />
+      <Source localRoot="edk2-non-osi" remote="Edk2NonOsiRepo" branch="devel-MinPlatform" sparseCheckout="true" />
+      <Source localRoot="FSP" remote="FspRepo" branch="master" sparseCheckout="true" />
+    </Combination>
+  </CombinationList>
+
+  <DscList>
+    <!-- List of the top-level Dsc's that are used to build this Platform.
+         These files will be parsed by EdkRepo to determine pkg dependencies
+     -->
+  </DscList>
+</Manifest>

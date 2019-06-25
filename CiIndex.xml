@@ -1,0 +1,7 @@
+<ProjectList>
+  <!-- Fhe 'xmlPath' values should be relative to this file (CiIndex.xml) -->
+  <Project name="edk2" xmlPath="edk2/edk2/edk2.xml" />
+  <Project name="EdkRepo" xmlPath="edk2/EdkRepo/EdkRepo.xml" />
+  <Project name="EdkRepoManifest" xmlPath="edk2/EdkRepoManifest/EdkRepoManifest.xml" />
+  <Project name="Intel-MinPlatform" xmlPath="edk2-platforms/Intel-MinPlatform/IntelMinPlatformManifest.xml" />
+</ProjectList>

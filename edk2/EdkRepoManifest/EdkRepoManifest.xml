@@ -1,0 +1,38 @@
+<Manifest>
+  <ProjectInfo>
+    <CodeName>EdkRepoManifest</CodeName>
+    <Description>EdkRepo Manifest Repo</Description>
+    <DevLead>ashley.e.desimone@intel.com</DevLead>
+    <LeadReviewers>
+      <Reviewer>ashley.e.desimone@intel.com</Reviewer>
+      <Reviewer>nathaniel.l.desimone@intel.com</Reviewer>
+      <Reviewer>puja.pandya@intel.com</Reviewer>
+    </LeadReviewers>
+  </ProjectInfo>
+
+  <GeneralConfig>
+    <PinPath>edk2/EdkRepoManifest/pins</PinPath>
+    <DefaultCombo combination="master" />
+    <CurrentClonedCombo combination="master" />
+  </GeneralConfig>
+
+  <RemoteList>
+    <Remote name="EdkRepoManifestRepo">https://github.com/tianocore/edk2-staging.git</Remote>
+  </RemoteList>
+
+  <ClientGitHookList>
+  </ClientGitHookList>
+
+  <CommitTemplates>
+    <Template remoteName="CrToolsRepo">Templates/edkrepo-manifest-review-template.txt</Template>
+  </CommitTemplates>
+
+  <CombinationList>
+    <Combination description="Master branch for the manifest repository." name="master">
+      <Source branch="EdkRepo-Manifest" localRoot="edk2-manifest" remote="EdkRepoManifestRepo" sparseCheckout="false" />
+    </Combination>
+  </CombinationList>
+
+  <DscList>
+  </DscList>
+</Manifest>

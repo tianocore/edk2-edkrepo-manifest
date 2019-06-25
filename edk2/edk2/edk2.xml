@@ -1,0 +1,38 @@
+<Manifest>
+  <ProjectInfo>
+    <CodeName>edk2</CodeName>
+    <Description>EFI Development Kit II</Description>
+    <DevLead>michael.d.kinney@intel.com</DevLead>
+    <LeadReviewers>
+      <Idsid>michael.d.kinney@intel.com</Idsid>
+      <Idsid>afish@apple.com</Idsid>
+      <Idsid>lersek@redhat.com</Idsid>
+      <Idsid>leif.lindholm@linaro.org</Idsid>
+    </LeadReviewers>
+  </ProjectInfo>
+
+  <GeneralConfig>
+    <PinPath>edk2/edk2/pins</PinPath>
+    <DefaultCombo combination="master" />
+    <CurrentClonedCombo combination="master" />
+  </GeneralConfig>
+
+  <RemoteList>
+    <Remote name="Edk2Repo">https://github.com/tianocore/edk2.git</Remote>
+  </RemoteList>
+
+  <ClientGitHookList>
+  </ClientGitHookList>
+
+  <CommitTemplates>
+  </CommitTemplates>
+
+  <CombinationList>
+    <Combination name="master" description="the master branch from all repos">
+      <Source localRoot="edk2" remote="Edk2Repo" branch="master" enableSubmodule="true" />
+    </Combination>
+  </CombinationList>
+
+  <DscList>
+  </DscList>
+</Manifest>
