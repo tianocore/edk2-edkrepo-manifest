@@ -25,7 +25,7 @@
   </GeneralConfig>
 
   <SparseCheckout>
-    <SparseSettings useDsc="false" sparseByDefault="true" />
+    <SparseSettings sparseByDefault="true" />
     <SparseData>
       <!-- Always include all files in the repository root. -->
       <AlwaysInclude>*.*</AlwaysInclude>
