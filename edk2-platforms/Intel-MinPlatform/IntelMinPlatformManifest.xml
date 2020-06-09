@@ -59,7 +59,7 @@
     <Remote name="Edk2Repo">https://github.com/tianocore/edk2.git</Remote>
     <Remote name="Edk2PlatformsRepo">https://github.com/tianocore/edk2-platforms.git</Remote>
     <Remote name="Edk2NonOsiRepo">https://github.com/tianocore/edk2-non-osi.git</Remote>
-    <Remote name="FspRepo">https://github.com/IntelFsp/FSP.git</Remote>
+    <Remote name="FspRepo">https://github.com/intel/FSP.git</Remote>
   </RemoteList>
 
   <ClientGitHookList>
