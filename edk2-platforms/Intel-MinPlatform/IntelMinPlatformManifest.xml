@@ -35,6 +35,7 @@
       <AlwaysInclude>ShellPkg|SourceLevelDebugPkg|UefiCpuPkg|FmpDevicePkg|CryptoPkg</AlwaysInclude>
     </SparseData>
     <SparseData remote="Edk2PlatformsRepo">
+      <AlwaysInclude>Drivers</AlwaysInclude>
       <AlwaysInclude>Features/Intel</AlwaysInclude>
       <AlwaysInclude>Platform/Intel/AdvancedFeaturePkg|Platform/Intel/MinPlatformPkg|Platform/Intel/BoardModulePkg</AlwaysInclude>
       <AlwaysInclude>Platform/Intel/DebugFeaturePkg|Platform/Intel/UserInterfaceFeaturePkg</AlwaysInclude>
