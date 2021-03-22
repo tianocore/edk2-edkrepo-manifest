@@ -37,21 +37,22 @@
     <SparseData remote="Edk2PlatformsRepo">
       <AlwaysInclude>Drivers</AlwaysInclude>
       <AlwaysInclude>Features/Intel</AlwaysInclude>
-      <AlwaysInclude>Platform/Intel/AdvancedFeaturePkg|Platform/Intel/MinPlatformPkg|Platform/Intel/BoardModulePkg</AlwaysInclude>
-      <AlwaysInclude>Platform/Intel/DebugFeaturePkg|Platform/Intel/UserInterfaceFeaturePkg</AlwaysInclude>
-      <AlwaysInclude>Platform/Intel/CometlakeOpenBoardPkg|Platform/Intel/KabylakeOpenBoardPkg|Platform/Intel/SimicsOpenBoardPkg</AlwaysInclude>
+      <AlwaysInclude>Platform/Intel/*.*</AlwaysInclude>
+      <AlwaysInclude>Platform/Intel/MinPlatformPkg|Platform/Intel/BoardModulePkg</AlwaysInclude>
+      <AlwaysInclude>Platform/Intel/CometlakeOpenBoardPkg|Platform/Intel/KabylakeOpenBoardPkg</AlwaysInclude>
+      <AlwaysInclude>Platform/Intel/SimicsOpenBoardPkg|Platform/Intel/TigerlakeOpenBoardPkg</AlwaysInclude>
       <AlwaysInclude>Platform/Intel/WhiskeylakeOpenBoardPkg</AlwaysInclude>
-      <AlwaysInclude>Platform/Intel/Readme.md|Platform/Intel/build.cfg|Platform/Intel/build_bios.py|Platform/Intel/Tools</AlwaysInclude>
+      <AlwaysInclude>Platform/Intel/Tools</AlwaysInclude>
       <AlwaysInclude>Silicon/Intel/IntelSiliconPkg|Silicon/Intel/KabylakeSiliconPkg|Silicon/Intel/CoffeelakeSiliconPkg</AlwaysInclude>
-      <AlwaysInclude>Silicon/Intel/SimicsIch10Pkg|Silicon/Intel/SimicsX58SktPkg|Silicon/Intel/Tools</AlwaysInclude>
+      <AlwaysInclude>Silicon/Intel/SimicsIch10Pkg|Silicon/Intel/SimicsX58SktPkg</AlwaysInclude>
+      <AlwaysInclude>Silicon/Intel/TigerlakeSiliconPkg</AlwaysInclude>
+      <AlwaysInclude>Silicon/Intel/Tools</AlwaysInclude>
     </SparseData>
     <SparseData remote="Edk2NonOsiRepo">
       <AlwaysInclude>Platform/Intel/KabylakeOpenBoardBinPkg</AlwaysInclude>
-      <AlwaysInclude>Silicon/Intel/CoffeelakeSiliconBinPkg|Silicon/Intel/KabylakeSiliconBinPkg</AlwaysInclude>
-      <AlwaysInclude>Silicon/Intel/PurleySiliconBinPkg|Silicon/Intel/SimicsIch10BinPkg</AlwaysInclude>
-    </SparseData>
-    <SparseData remote="FspRepo">
-      <AlwaysInclude>AmberLakeFspBinPkg|CoffeeLakeFspBinPkg|CometLakeFspBinPkg|IceLakeFspBinPkg|KabylakeFspBinPkg</AlwaysInclude>
+      <AlwaysInclude>Silicon/Intel/CoffeelakeSiliconBinPkg|Silicon/Intel/CometlakeSiliconBinPkg</AlwaysInclude>
+      <AlwaysInclude>Silicon/Intel/KabylakeSiliconBinPkg|Silicon/Intel/SimicsIch10BinPkg</AlwaysInclude>
+      <AlwaysInclude>Silicon/Intel/TigerlakeSiliconBinPkg</AlwaysInclude>
     </SparseData>
   </SparseCheckout>
 
@@ -77,7 +78,7 @@
       <Source localRoot="edk2" remote="Edk2Repo" branch="master" sparseCheckout="true" enableSubmodule="true" />
       <Source localRoot="edk2-platforms" remote="Edk2PlatformsRepo" branch="master" sparseCheckout="true" />
       <Source localRoot="edk2-non-osi" remote="Edk2NonOsiRepo" branch="master" sparseCheckout="true" />
-      <Source localRoot="FSP" remote="FspRepo" branch="master" sparseCheckout="true" />
+      <Source localRoot="FSP" remote="FspRepo" branch="master" sparseCheckout="false" />
     </Combination>
   </CombinationList>
 
