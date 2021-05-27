@@ -47,4 +47,3 @@ EdkRepo Manifest
 W: https://github.com/tianocore/edk2-staging/tree/EdkRepo-Manifest
 M: Nate DeSimone <nathaniel.l.desimone@intel.com>
 M: Ashley DeSimone <ashley.e.desimone@intel.com>
-R: Puja Pandya <puja.pandya@intel.com>
