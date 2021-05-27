@@ -41,11 +41,11 @@
       <AlwaysInclude>Platform/Intel/MinPlatformPkg|Platform/Intel/BoardModulePkg</AlwaysInclude>
       <AlwaysInclude>Platform/Intel/CometlakeOpenBoardPkg|Platform/Intel/KabylakeOpenBoardPkg</AlwaysInclude>
       <AlwaysInclude>Platform/Intel/SimicsOpenBoardPkg|Platform/Intel/TigerlakeOpenBoardPkg</AlwaysInclude>
-      <AlwaysInclude>Platform/Intel/WhiskeylakeOpenBoardPkg</AlwaysInclude>
+      <AlwaysInclude>Platform/Intel/WhiskeylakeOpenBoardPkg|Platform/Intel/PurleyOpenBoardPkg</AlwaysInclude>
       <AlwaysInclude>Platform/Intel/Tools</AlwaysInclude>
       <AlwaysInclude>Silicon/Intel/IntelSiliconPkg|Silicon/Intel/KabylakeSiliconPkg|Silicon/Intel/CoffeelakeSiliconPkg</AlwaysInclude>
       <AlwaysInclude>Silicon/Intel/SimicsIch10Pkg|Silicon/Intel/SimicsX58SktPkg</AlwaysInclude>
-      <AlwaysInclude>Silicon/Intel/TigerlakeSiliconPkg</AlwaysInclude>
+      <AlwaysInclude>Silicon/Intel/TigerlakeSiliconPkg|Silicon/Intel/PurleyRefreshSiliconPkg</AlwaysInclude>
       <AlwaysInclude>Silicon/Intel/Tools</AlwaysInclude>
     </SparseData>
     <SparseData remote="Edk2NonOsiRepo">
