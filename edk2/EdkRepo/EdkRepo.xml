@@ -6,30 +6,29 @@
     <LeadReviewers>
       <Reviewer>ashley.e.desimone@intel.com</Reviewer>
       <Reviewer>nathaniel.l.desimone@intel.com</Reviewer>
-      <Reviewer>puja.pandya@intel.com</Reviewer>
     </LeadReviewers>
   </ProjectInfo>
 
   <GeneralConfig>
     <PinPath>edk2/EdkRepo/pins</PinPath>
-    <DefaultCombo combination="master" />
-    <CurrentClonedCombo combination="master" />
+    <DefaultCombo combination="main" />
+    <CurrentClonedCombo combination="main" />
   </GeneralConfig>
 
   <RemoteList>
-    <Remote name="Edk2StagingRepo">https://github.com/tianocore/edk2-staging.git</Remote>
+    <Remote name="Edk2EdkRepoRepo">https://github.com/tianocore/edk2-edkrepo.git</Remote>
   </RemoteList>
 
   <ClientGitHookList>
   </ClientGitHookList>
 
   <CommitTemplates>
-    <Template remoteName="CrToolsRepo">Templates/edkrepo-review-template.txt</Template>
+    <Template remoteName="Edk2EdkRepoRepo">Templates/edkrepo-review-template.txt</Template>
   </CommitTemplates>
 
   <CombinationList>
-    <Combination name="master" description="the master branch from all repos">
-      <Source localRoot="edk2-staging" remote="Edk2StagingRepo" branch="EdkRepo" />
+    <Combination name="main" description="the main branch from all repos">
+      <Source localRoot="edk2-edkrepo" remote="Edk2EdkRepoRepo" branch="main" />
     </Combination>
   </CombinationList>
 
