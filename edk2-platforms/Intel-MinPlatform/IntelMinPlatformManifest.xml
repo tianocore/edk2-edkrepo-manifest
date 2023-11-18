@@ -6,13 +6,9 @@
     <LeadReviewers>
       <Reviewer>chasel.chiu@intel.com</Reviewer>
       <Reviewer>nathaniel.l.desimone@intel.com</Reviewer>
-      <Reviewer>liming.gao@intel.com</Reviewer>
       <Reviewer>ray.ni@intel.com</Reviewer>
       <Reviewer>rangasai.v.chaganty@intel.com</Reviewer>
-      <Reviewer>isaac.w.oram@intel.com</Reviewer>
-      <Reviewer>daocheng.bu@intel.com</Reviewer>
-      <Reviewer>shifei.a.lu@intel.com</Reviewer>
-      <Reviewer>bowen.zhou@intel.com</Reviewer>
+      <Reviewer>gaoliming@byosoft.com.cn</Reviewer>
     </LeadReviewers>
   </ProjectInfo>
 
@@ -33,28 +29,37 @@
       <AlwaysInclude>FatPkg|IntelFsp2Pkg|IntelFsp2WrapperPkg</AlwaysInclude>
       <AlwaysInclude>MdeModulePkg|MdePkg|NetworkPkg|PcAtChipsetPkg|SecurityPkg</AlwaysInclude>
       <AlwaysInclude>ShellPkg|SourceLevelDebugPkg|UefiCpuPkg|FmpDevicePkg|CryptoPkg</AlwaysInclude>
+      <AlwaysInclude>OvmfPkg|PrmPkg|RedfishPkg|SignedCapsulePkg|StandaloneMmPkg</AlwaysInclude>
+      <AlwaysInclude>UefiPayloadPkg|UnitTestFrameworkPkg</AlwaysInclude>
     </SparseData>
     <SparseData remote="Edk2PlatformsRepo">
       <AlwaysInclude>Drivers</AlwaysInclude>
-      <AlwaysInclude>Features/Intel</AlwaysInclude>
+      <AlwaysInclude>Features</AlwaysInclude>
       <AlwaysInclude>Platform/Intel/*.*</AlwaysInclude>
       <AlwaysInclude>Platform/Intel/MinPlatformPkg|Platform/Intel/BoardModulePkg</AlwaysInclude>
-      <AlwaysInclude>Platform/Intel/CometlakeOpenBoardPkg|Platform/Intel/KabylakeOpenBoardPkg</AlwaysInclude>
-      <AlwaysInclude>Platform/Intel/SimicsOpenBoardPkg|Platform/Intel/TigerlakeOpenBoardPkg</AlwaysInclude>
-      <AlwaysInclude>Platform/Intel/WhiskeylakeOpenBoardPkg|Platform/Intel/PurleyOpenBoardPkg</AlwaysInclude>
+      <AlwaysInclude>Platform/Intel/AlderlakeOpenBoardPkg|Platform/Intel/CometlakeOpenBoardPkg</AlwaysInclude>
+      <AlwaysInclude>Platform/Intel/EaglestreamOpenBoardPkg|Platform/Intel/KabylakeOpenBoardPkg</AlwaysInclude>
+      <AlwaysInclude>Platform/Intel/PurleyOpenBoardPkg|Platform/Intel/SimicsOpenBoardPkg</AlwaysInclude>
+      <AlwaysInclude>Platform/Intel/TigerlakeOpenBoardPkg|Platform/Intel/WhiskeylakeOpenBoardPkg</AlwaysInclude>
       <AlwaysInclude>Platform/Intel/WhitleyOpenBoardPkg</AlwaysInclude>
       <AlwaysInclude>Platform/Intel/Tools</AlwaysInclude>
-      <AlwaysInclude>Silicon/Intel/IntelSiliconPkg|Silicon/Intel/KabylakeSiliconPkg|Silicon/Intel/CoffeelakeSiliconPkg</AlwaysInclude>
-      <AlwaysInclude>Silicon/Intel/SimicsIch10Pkg|Silicon/Intel/SimicsX58SktPkg</AlwaysInclude>
-      <AlwaysInclude>Silicon/Intel/TigerlakeSiliconPkg|Silicon/Intel/PurleyRefreshSiliconPkg</AlwaysInclude>
+      <AlwaysInclude>Silicon/Intel/IntelSiliconPkg</AlwaysInclude>
+      <AlwaysInclude>Silicon/Intel/AlderlakeSiliconPkg|Silicon/Intel/CoffeelakeSiliconPkg</AlwaysInclude>
+      <AlwaysInclude>Silicon/Intel/EaglestreamSiliconPkg|Silicon/Intel/KabylakeSiliconPkg</AlwaysInclude>
+      <AlwaysInclude>Silicon/Intel/PurleyRefreshSiliconPkg|Silicon/Intel/SimicsIch10Pkg</AlwaysInclude>
+      <AlwaysInclude>Silicon/Intel/SimicsX58SktPkg|Silicon/Intel/TigerlakeSiliconPkg</AlwaysInclude>
       <AlwaysInclude>Silicon/Intel/WhitleySiliconPkg</AlwaysInclude>
       <AlwaysInclude>Silicon/Intel/Tools</AlwaysInclude>
     </SparseData>
     <SparseData remote="Edk2NonOsiRepo">
-      <AlwaysInclude>Platform/Intel/KabylakeOpenBoardBinPkg</AlwaysInclude>
-      <AlwaysInclude>Silicon/Intel/CoffeelakeSiliconBinPkg|Silicon/Intel/CometlakeSiliconBinPkg</AlwaysInclude>
-      <AlwaysInclude>Silicon/Intel/KabylakeSiliconBinPkg|Silicon/Intel/SimicsIch10BinPkg</AlwaysInclude>
-      <AlwaysInclude>Silicon/Intel/TigerlakeSiliconBinPkg|Silicon/Intel/WhitleySiliconBinPkg</AlwaysInclude>
+      <AlwaysInclude>Drivers/ASpeed/ASpeedGopBinPkg</AlwaysInclude>
+      <AlwaysInclude>Platform/Intel/KabylakeOpenBoardBinPkg|Platform/Intel/EaglestreamOpenBoardBinPkg</AlwaysInclude>
+      <AlwaysInclude>Platform/Intel/WhitleyOpenBoardBinPkg</AlwaysInclude>
+      <AlwaysInclude>Silicon/Intel/AlderlakeSiliconBinPkg|Silicon/Intel/CoffeelakeSiliconBinPkg</AlwaysInclude>
+      <AlwaysInclude>Silicon/Intel/CometlakeSiliconBinPkg|Silicon/Intel/EaglestreamSiliconBinPkg</AlwaysInclude>
+      <AlwaysInclude>Silicon/Intel/KabylakeSiliconBinPkg|Silicon/Intel/PurleySiliconBinPkg</AlwaysInclude>
+      <AlwaysInclude>Silicon/Intel/SimicsIch10BinPkg|Silicon/Intel/TigerlakeSiliconBinPkg</AlwaysInclude>
+      <AlwaysInclude>Silicon/Intel/WhitleySiliconBinPkg</AlwaysInclude>
     </SparseData>
   </SparseCheckout>
 
